@@ -1,0 +1,253 @@
+/*!*****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/reset.css ***!
+  \*****************************************************************/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*!******************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles.css ***!
+  \******************************************************************/
+/* Fonts */
+@font-face {
+    font-family: 'mplus';
+    src: url(cc5eea69a1bbbfa764bd.woff) format(woff),
+    url(052bb14973e29485cd01.woff2) format(woff2);
+    font-weight: 700;
+        font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    font-family: 'mplus', Verdana;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('https://source.unsplash.com/random/?hanoi,afternoon,few,clouds');
+    background-position: center;
+        background-size: 100%;
+    color: rgb(41, 42, 44);
+    font-family: 'mplus', Verdana;
+}
+
+/* Stucture */
+
+input {
+    width: 400px;
+    height: 50px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    background-color: rgba(204, 222, 233, 0.623);
+    outline: none;
+    border: 3px solid rgba(67, 89, 104, 0.897);
+    padding-left: 14px;
+    font-size: 16px;
+}
+
+.weatherReport{
+    display: flex;
+    width: 600px;
+    height: 300px;
+    background-color: rgba(204, 222, 233, 0.897);
+    border-radius: 10px;;
+    border: 3px solid rgba(83, 114, 134, 0.897);
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+        padding-left: 30px;
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 60%;
+    gap: 40px;
+}
+
+/* Section 1 */
+
+.temperature {
+    font-size: 60px;
+    margin: -5px 0 10px 0;
+
+}
+
+.icon {
+    width: 100px;
+    margin-top: -15px;
+}
+
+.description {
+    font-size: 20px;
+}
+
+/* Section 2 */
+
+.section2 h1{
+    text-align: center;
+    font-size: 55px;
+}
+
+.windHumDiv, .minMaxDiv{
+    display: flex;
+    justify-content: space-around;
+}
+
+.dataDiv {
+    text-align: center;
+    width: 50%;
+}
+
+.dataTitle {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.dataTitle + div {
+    font-size: 16px;
+}
+
