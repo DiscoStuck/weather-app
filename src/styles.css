@@ -23,7 +23,7 @@ body {
     flex-direction: column;
     background-image: url('https://source.unsplash.com/random/?hanoi,afternoon,few,clouds');
     background-position: center;
-        background-size: 100%;
+        background-size: cover;
     color: rgb(41, 42, 44);
     font-family: 'mplus', Verdana;
 }
@@ -111,4 +111,32 @@ input {
 
 .dataTitle + div {
     font-size: 16px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 740px){
+
+input{
+    width: 90%;
+}
+
+.weatherReport {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    padding: 15% 10%;
+}
+
+.section1 {
+    width: auto;
+    padding: 0;
+    margin-bottom: 10%;
+}
+
+.section2 {
+    width: auto;
+}
+
 }
